@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+
+<div class="temperature">
+
+<h1>TEMPERATURE CONVERTER</h1>
+<p>Value To Convert</p>
+
+
+<input type="number" placeholder="TEMPERATURE TO CONVERT" name="value" id="input_value"/>
+<p>From</p>
+
+
+<select  name="input" id="input">
+<option value="select" id="select">SELECT UNIT</option>
+<option value="kel" id="kel">kelvin [°K]</option>
+<option value="cel" id="cel">celsius [°C]</option>
+<option value="far"id="far">fahrenheit [°F]</option>
+</select>
+
+<p>To</p>
+
+
+<select name="output" id="output" >
+<option value="select" id="select">SELECT UNIT</option>
+<option value="kel" id="kel">kelvin [°K]</option>
+<option value="cel" id="cel">celsius [°C]</option>
+<option value="far"id="far">fahrenheit [°F]</option>
+</select>
+<p>Convert</p>
+
+
+<input class="button" type="submit" id="convert" onclick="Temp()" >
+<p>Result</p>
+
+<input type="number" placeholder="VIEW RESULT" id="r" disabled>
+<output id="r"></output>
+
+
+</div>
+
+<script src="index.js"></script>
+</body>
+
+</html>
